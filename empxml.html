@@ -19,11 +19,10 @@
              $(xml).find('data').each(function(){  
               t.row.add( [
                 $(this).find('name').text(),
-                $(this).find('designation').text(),
-                $(this).find('office').text(),
-                $(this).find('extension').text(),
-                $(this).find('joining_date').text(),
-                $(this).find('salary').text()
+                $(this).find('college').text(),
+                $(this).find('height').text(),
+                $(this).find('jersey_number').text(),
+                $(this).find('city').text()
               ] ).draw( false );
              });
             }
@@ -36,23 +35,21 @@
   <table id="chart" class="display" cellspacing="0" width="100%">
     <thead>
         <tr>
-            <th>Name</th>
-            <th>Designation</th>
-            <th>Office</th>
-            <th>Extension</th>
-            <th>Joining Date</th>
-            <th>Salary</th>
+            <th>name</th>
+            <th>college</th>
+            <th>height</th>
+            <th>jersey_number</th>
+            <th>city</th>
         </tr>
     </thead>
 
     <tfoot>
         <tr>
-            <th>Name</th>
-            <th>Designation</th>
-            <th>Office</th>
-            <th>Extension</th>
-            <th>Joining Date</th>
-            <th>Salary</th>
+            <th>name</th>
+            <th>college</th>
+            <th>height</th>
+            <th>jersey_number</th>
+            <th>city</th>
         </tr>
     </tfoot>
   </table>
